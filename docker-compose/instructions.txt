@@ -1,0 +1,10 @@
+# INSTRUCTIONS FOR INFRASTRUCTURE
+
+# Docker
+docker pull amazoncorretto:21.0.4-alpine
+
+# INFRAESTRUCTURE
+docker-compose -f common.yml -f 1.infra-structure.yml up -d
+
+# USERS MICROSERVICE
+docker-compose -f common.yml -f 2.applications.yml up -d

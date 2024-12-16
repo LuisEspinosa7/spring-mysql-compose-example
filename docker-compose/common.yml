@@ -1,0 +1,3 @@
+networks:
+  docker-compose-example:
+      driver: bridge
